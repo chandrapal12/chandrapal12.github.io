@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit:wght@300&family=Merriweather:wght@300;400&family=Potta+One&family=Roboto:wght@300&family=Rubik&family=Shippori+Antique+B1&family=Tiro+Devanagari+Sanskrit&family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color:rgb(221, 218, 218);
+    /* width:300px; */
+    height:100vh;
+    font-family: 'Rubik', sans-serif;
+    transition:transform 0.3s ease-in;
+    position:absolute;
+}
+.sidebar nav{
+    padding:42px;
+}
+.sidebar nav li{
+    list-style:none;
+    font-size:25px;
+    padding:50px 3px;
+}
+.sidebar nav li a{
+    text-decoration:none;
+    color:black;
+}
+.main{
+    /* background-color:rgb(167, 64, 167);  */
+    width:88vw;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.container{
+    display:flex; 
+}
+.infoContainer{
+    border-radius:5px;
+    /* background-color:rgb(226, 40, 226); */
+    width: 70vw;
+    height:51vh;
+    margin:130px auto;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.devInfo{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.hello{font-size:30px;}
+.name{font-weight:bolder; font-size:60px;}
+.expert{font-size:30px;}
+.interest{font-size:30px;}
+.other{font-size:30px;}
+.moreAbout{padding-top:10px; font-size:22px;}
+.buttons{
+    margin-top:10px;
+}
+.buttons button{ 
+    
+    font-size:25px;
+    border-radius:14px;
+    font-family: 'Rubik', sans-serif;
+    background-color:dodgerblue;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+    
+}
+.buttons button:hover{
+    background-color:white;
+    color:blue;
+    font-weight:bolder;
+}
+
+.devPic img{
+    height:51vh;
+    
+}
+.sidebarGo{
+    
+    transform: translateX(-250px);
+    position: absolute;
+    
+}
+
+/* Hamburger icon */
+.ham{
+    width:23px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+/* Cross icon */
+.close{
+    margin-left:171px;
+    width:23px;
+}
+
+/* <=================================================RESPONSIVENESS =========================================>*/
+
+@media (max-width:949px){
+    /* body{background-color:lightblue;} */
+    .devPic img{
+        display:none;
+        
+    }
+}
+@media (max-width:450px){
+.hello{font-size:20px;}
+.name{font-weight:bolder; font-size:40px;}
+.expert{font-size:20px;}
+.interest{font-size:20px;}
+.other{font-size:20px;}
+.moreAbout{padding-top:20px; font-size:16px;}
+
+.buttons button{
+    font-size:14px; 
+    padding:6px;
+}
+
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kanit:wght@300&family=Merriweather:wght@300;400&family=Potta+One&family=Roboto:wght@300&family=Rubik&family=Shippori+Antique+B1&family=Tiro+Devanagari+Sanskrit&family=Yanone+Kaffeesatz:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color:rgb(221, 218, 218);
+    /* width:300px; */
+    height:100vh;
+    font-family: 'Rubik', sans-serif;
+    position:absolute;
+}
+.sidebar nav{
+    padding:42px;
+}
+.sidebar nav li{
+    list-style:none;
+    font-size:25px;
+    padding:50px 3px;
+}
+.sidebar nav li a{
+    text-decoration:none;
+    color:black;
+}
+.main{
+    /* background-color:rgb(167, 64, 167);  */
+    width:88vw;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.main h1{
+    margin:50px;
+    margin-bottom:60px ;
+}
+.container{
+    display:flex; 
+}
+.port{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.port .sample a img{
+    width:20vw;
+}
+.design{
+    text-align:center;
+   
+    
+}
+.sample{
+    margin:30px;
+}
+.sidebarGo{
+    
+    transform: translateX(-250px);
+    position: absolute;
+    
+}
+/* Hamburger icon */
+.ham{
+    width:23px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+/* Cross icon */
+.close{
+    margin-left:171px;
+    width:23px;
+}
+/* <=================================================RESPONSIVENESS =========================================>*/
+
+@media (max-width:824px){
+    .main h1{
+        text-align:center;
+    }
+}
