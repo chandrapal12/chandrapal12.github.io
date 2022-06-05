@@ -13,7 +13,7 @@ document.querySelector(".hamburger").addEventListener("click", ()=>{
         document.querySelector('.ham').style.display = 'none'
         setTimeout(() => {
             document.querySelector('.close').style.display='inline'
-        },400);
+        },150);
             
     }
 
